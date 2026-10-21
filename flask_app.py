@@ -24,11 +24,11 @@ def accueil():
 # ---------------------------------------------------------------
 #  Ajoutez vos nouvelles routes ci-dessous 👇
 # ---------------------------------------------------------------
-@app.get("presentation")
+@app.get("/presentation")
 def presentation():
     return "Je suis etudiant a l'ICAM"
 
-@app.get("loisir")
+@app.get("/loisir")
 def loisir():
     return "Je vais au Bar"
 
