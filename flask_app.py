@@ -28,12 +28,22 @@ def accueil():
 def presentation():
     return """
     <h1>MAXIME MASUREL</h1>
-    <p>Je suis étudiant en <strong>deuxieme année a l'ICAM</strong>.</p>
+    <head>
+    <meta charset="utf-8">
+    <title>Présentation</title>
+</head>
+<body>
+    <h1>{{ Maxime }} {{ Masurel }}</h1>
+    <p>Je suis étudiant en <strong>deuxieme année a l'ICAM</strong</strong>.</p>
+</body>
+    
     <h2>Ce que j'aime</h2>
     <ul>
         <li>Les voiture</li>
-        <li>Les Avions</li>
+        <li>La voile ]</li>
         <li>Le code (bientôt !)</li>
+    <img src="https://snbsm.com/wp-content/uploads/2017/12/Rhum-Logo-Rond400.png" width="100">
+    """ 
     </ul>
     """
 
