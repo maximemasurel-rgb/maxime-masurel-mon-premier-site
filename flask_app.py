@@ -1,33 +1,16 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
+
+
 @app.get("/")
 def accueil():
-    return "C'est moi Maxime"
+    return render_template("accueil.html")
+
+
 @app.get("/presentation")
 def presentation():
-    return """
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <title>Présentation</title>
-</head>
-<body>
-    <h1>Maxime Masurel</h1>
-    <p>Je suis étudiant en <strong>deuxième année à l'ICAM</strong>.</p>
-
-    <h2>Ce que j'aime</h2>
-    <ul>
-        <li>Les voitures</li>
-        <li>La voile</li>
-        <li>Le code (bientôt !)</li>
-    </ul>
-
-    <img src="https://snbsm.com/wp-content/uploads/2017/12/Rhum-Logo-Rond400.png" width="100">
-</body>
-</html>
-"""
+    return render_template("presentation.html")
 
 
 @app.get("/loisir")
